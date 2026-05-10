@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hanyi Zhang | Machine Learning & Full-Stack Developer</title>
+    <title data-i18n="title">Hanyi Zhang | Machine Learning & Full-Stack Developer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -14,30 +14,33 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="#hero" class="nav-logo">Hanyi Zhang</a>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-                <span></span><span></span><span></span>
-            </button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <div class="nav-right">
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#about" data-i18n="nav.about">About</a></li>
+                    <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+                    <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+                    <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+                    <li><a href="#education" data-i18n="nav.education">Education</a></li>
+                    <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+                </ul>
+                <button class="lang-toggle" id="langToggle" aria-label="Switch language">中</button>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="hero" class="hero">
         <div class="hero-content">
-            <p class="hero-greeting">Hello, I'm</p>
+            <p class="hero-greeting" data-i18n="hero.greeting">Hello, I'm</p>
             <h1 class="hero-name">Hanyi Zhang</h1>
-            <p class="hero-title">Machine Learning Engineer & Full-Stack Developer</p>
-            <p class="hero-desc">MSc Computer Science at University of Glasgow. Specializing in LLM fine-tuning, knowledge distillation, RAG systems, and web development. Passionate about making AI systems efficient and production-ready.</p>
+            <p class="hero-title" data-i18n="hero.title">Machine Learning Engineer &amp; Full-Stack Developer</p>
+            <p class="hero-desc" data-i18n="hero.desc">MSc Computer Science at University of Glasgow. Specializing in LLM fine-tuning, knowledge distillation, RAG systems, and web development. Passionate about making AI systems efficient and production-ready.</p>
             <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View Projects</a>
-                <a href="mailto:1009811214@qq.com" class="btn btn-secondary">Contact Me</a>
+                <a href="#projects" class="btn btn-primary" data-i18n="hero.viewProjects">View Projects</a>
+                <a href="mailto:1009811214@qq.com" class="btn btn-secondary" data-i18n="hero.contactMe">Contact Me</a>
             </div>
             <div class="hero-socials">
                 <a href="https://github.com/cuihua739-lang" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
@@ -52,23 +55,23 @@
     <!-- About Section -->
     <section id="about" class="section">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title" data-i18n="about.title">About Me</h2>
             <div class="about-grid">
                 <div class="about-text">
-                    <p>I'm a machine learning engineer with expertise in deep learning, natural language processing, and full-stack web development. Currently completing my MSc in Computer Science at the University of Glasgow, with a bachelor's in Space Information & Digital Technology from Jilin University.</p>
-                    <p>My research on knowledge distillation for search reranking eliminates the high latency of chain-of-thought generation while maintaining near-baseline accuracy. I've also built RAG systems that reduced LLM hallucination rates from 36% to below 6% in e-commerce scenarios.</p>
+                    <p data-i18n="about.p1">I'm a machine learning engineer with expertise in deep learning, natural language processing, and full-stack web development. Currently completing my MSc in Computer Science at the University of Glasgow, with a bachelor's in Space Information & Digital Technology from Jilin University.</p>
+                    <p data-i18n="about.p2">My research on knowledge distillation for search reranking eliminates the high latency of chain-of-thought generation while maintaining near-baseline accuracy. I've also built RAG systems that reduced LLM hallucination rates from 36% to below 6% in e-commerce scenarios.</p>
                     <div class="about-stats">
                         <div class="stat">
                             <span class="stat-number">2</span>
-                            <span class="stat-label">Research Projects</span>
+                            <span class="stat-label" data-i18n="about.statResearch">Research Projects</span>
                         </div>
                         <div class="stat">
                             <span class="stat-number">2</span>
-                            <span class="stat-label">Internships</span>
+                            <span class="stat-label" data-i18n="about.statIntern">Internships</span>
                         </div>
                         <div class="stat">
                             <span class="stat-number">2</span>
-                            <span class="stat-label">Patents</span>
+                            <span class="stat-label" data-i18n="about.statPatent">Patents</span>
                         </div>
                     </div>
                 </div>
@@ -79,10 +82,10 @@
     <!-- Skills Section -->
     <section id="skills" class="section section-alt">
         <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
+            <h2 class="section-title" data-i18n="skills.title">Technical Skills</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3 class="skill-category-title"><i class="fas fa-brain"></i> LLM & Deep Learning</h3>
+                    <h3 class="skill-category-title"><i class="fas fa-brain"></i> <span data-i18n="skills.llm">LLM &amp; Deep Learning</span></h3>
                     <div class="skill-tags">
                         <span class="skill-tag">PyTorch</span>
                         <span class="skill-tag">Hugging Face</span>
@@ -96,7 +99,7 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3 class="skill-category-title"><i class="fas fa-compress-alt"></i> Model Optimization</h3>
+                    <h3 class="skill-category-title"><i class="fas fa-compress-alt"></i> <span data-i18n="skills.optimization">Model Optimization</span></h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Knowledge Distillation</span>
                         <span class="skill-tag">INT8/4 Quantization</span>
@@ -108,7 +111,7 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3 class="skill-category-title"><i class="fas fa-database"></i> Data & RAG</h3>
+                    <h3 class="skill-category-title"><i class="fas fa-database"></i> <span data-i18n="skills.data">Data &amp; RAG</span></h3>
                     <div class="skill-tags">
                         <span class="skill-tag">SQL</span>
                         <span class="skill-tag">LangChain</span>
@@ -120,7 +123,7 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3 class="skill-category-title"><i class="fas fa-laptop-code"></i> Programming & Web</h3>
+                    <h3 class="skill-category-title"><i class="fas fa-laptop-code"></i> <span data-i18n="skills.programming">Programming &amp; Web</span></h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Python</span>
                         <span class="skill-tag">Java</span>
@@ -133,11 +136,11 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3 class="skill-category-title"><i class="fas fa-language"></i> Languages</h3>
+                    <h3 class="skill-category-title"><i class="fas fa-language"></i> <span data-i18n="skills.languages">Languages</span></h3>
                     <div class="skill-tags">
                         <span class="skill-tag">English: IELTS 6.5</span>
                         <span class="skill-tag">CET-6</span>
-                        <span class="skill-tag">Mandarin: Native</span>
+                        <span class="skill-tag" data-i18n="skills.native">Mandarin: Native</span>
                     </div>
                 </div>
             </div>
@@ -147,50 +150,53 @@
     <!-- Projects Section -->
     <section id="projects" class="section">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
+            <h2 class="section-title" data-i18n="projects.title">Featured Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-badge">Research · 2025</div>
-                    <h3 class="project-title">Knowledge Distillation for Efficient Search Reranking</h3>
-                    <p class="project-desc">Addressed high inference latency of LLMs in search reranking caused by chain-of-thought (CoT) generation. Proposed a chainless knowledge distillation strategy using the teacher model's final judgment labels instead of full reasoning chains to train student models. The student model internalizes reasoning capability through one forward pass, significantly reducing latency and memory. Maintains near-baseline performance on benchmarks like BRIGHT and NevIR.</p>
+                    <div class="project-badge" data-i18n="projects.p1.badge">Research · 2025</div>
+                    <h3 class="project-title" data-i18n="projects.p1.title">Knowledge Distillation for Efficient Search Reranking</h3>
+                    <p class="project-desc" data-i18n="projects.p1.desc">Addressed high inference latency of LLMs in search reranking caused by chain-of-thought (CoT) generation. Proposed a chainless knowledge distillation strategy using the teacher model's final judgment labels instead of full reasoning chains to train student models. The student model internalizes reasoning capability through one forward pass, significantly reducing latency and memory. Maintains near-baseline performance on benchmarks like BRIGHT and NevIR.</p>
                     <div class="project-tech">
                         <span>PyTorch</span><span>LoRA</span><span>Qwen2.5</span><span>Knowledge Distillation</span><span>MTEB</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/cuihua739-lang/distill-rank1" target="_blank"><i class="fab fa-github"></i> Source Code</a>
+                        <a href="https://github.com/cuihua739-lang/distill-rank1" target="_blank"><i class="fab fa-github"></i> <span data-i18n="projects.sourceCode">Source Code</span></a>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-badge">RAG System · 2025</div>
-                    <h3 class="project-title">RAG-based E-Commerce Intelligent Product Consultation</h3>
-                    <p class="project-desc">Built a retrieval-augmented generation system to reduce LLM hallucination rate (36%→&lt;6%) in e-commerce product consultations. Used LangChain for semantic chunking of product manuals, after-sales rules, and size parameters. Vectorized text via Sentence-BERT, built FAISS vector database for Top-K similarity retrieval. Optimized prompt assembly logic for context length and information density. Achieved 48% accuracy improvement with hot-updatable product documents — no model retraining needed.</p>
+                    <div class="project-badge" data-i18n="projects.p2.badge">RAG System · 2025</div>
+                    <h3 class="project-title" data-i18n="projects.p2.title">RAG-based E-Commerce Intelligent Product Consultation</h3>
+                    <p class="project-desc" data-i18n="projects.p2.desc">Built a retrieval-augmented generation system to reduce LLM hallucination rate (36%&rarr;&lt;6%) in e-commerce product consultations. Used LangChain for semantic chunking of product manuals, after-sales rules, and size parameters. Vectorized text via Sentence-BERT, built FAISS vector database for Top-K similarity retrieval. Optimized prompt assembly logic for context length and information density. Achieved 48% accuracy improvement with hot-updatable product documents — no model retraining needed.</p>
                     <div class="project-tech">
                         <span>LangChain</span><span>FAISS</span><span>Sentence-BERT</span><span>RAG</span><span>Prompt Engineering</span>
+                    </div>
+                    <div class="project-links">
+                        <span></span>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-badge">AI Tool · 2026</div>
-                    <h3 class="project-title">Social Media Copywriter — Multi-Platform AI Content Generator</h3>
-                    <p class="project-desc">AI-powered copywriting tool supporting 7 Chinese social media platforms (WeChat Official, Xiaohongshu, Douyin, Weibo, Bilibili, Zhihu, Toutiao), 8 content types, and 7 writing styles. Built with a FastAPI backend featuring a 4-layer prompt assembly engine, and a responsive vanilla JS SPA frontend with dual-panel layout. Integrates with DeepSeek API via Anthropic-compatible endpoint for authentic Chinese content generation, with fine-grained controls for tone (5 levels), length (5 levels), emoji density (3 levels), and 1–5 parallel variants per generation.</p>
+                    <h3 class="project-title" data-i18n="projects.p3.title">Social Media Copywriter — Multi-Platform AI Content Generator</h3>
+                    <p class="project-desc" data-i18n="projects.p3.desc">AI-powered copywriting tool supporting 7 Chinese social media platforms (WeChat Official, Xiaohongshu, Douyin, Weibo, Bilibili, Zhihu, Toutiao), 8 content types, and 7 writing styles. Built with a FastAPI backend featuring a 4-layer prompt assembly engine, and a responsive vanilla JS SPA frontend with dual-panel layout. Integrates with DeepSeek API via Anthropic-compatible endpoint for authentic Chinese content generation, with fine-grained controls for tone (5 levels), length (5 levels), emoji density (3 levels), and 1–5 parallel variants per generation.</p>
                     <div class="project-tech">
                         <span>FastAPI</span><span>Python</span><span>DeepSeek</span><span>Anthropic SDK</span><span>HTML/CSS/JS</span><span>Prompt Engineering</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/cuihua739-lang/social-media-copywriter" target="_blank"><i class="fab fa-github"></i> Source Code</a>
+                        <a href="https://github.com/cuihua739-lang/social-media-copywriter" target="_blank"><i class="fab fa-github"></i> <span data-i18n="projects.sourceCode">Source Code</span></a>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-badge">Full-Stack · 2024</div>
-                    <h3 class="project-title">E-Vehicle Share System</h3>
-                    <p class="project-desc">Full-stack Django web application for electric vehicle sharing management. Features user authentication, vehicle inventory CRUD, department and employee administration, and responsive UI with Bootstrap 5. Includes booking simulation and payment flow.</p>
+                    <h3 class="project-title" data-i18n="projects.p4.title">E-Vehicle Share System</h3>
+                    <p class="project-desc" data-i18n="projects.p4.desc">Full-stack Django web application for electric vehicle sharing management. Features user authentication, vehicle inventory CRUD, department and employee administration, and responsive UI with Bootstrap 5. Includes booking simulation and payment flow.</p>
                     <div class="project-tech">
                         <span>Django</span><span>Python</span><span>SQLite</span><span>Bootstrap 5</span><span>HTML/CSS</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/cuihua739-lang/e-vehicle-share-system" target="_blank"><i class="fab fa-github"></i> Source Code</a>
+                        <a href="https://github.com/cuihua739-lang/e-vehicle-share-system" target="_blank"><i class="fab fa-github"></i> <span data-i18n="projects.sourceCode">Source Code</span></a>
                     </div>
                 </div>
             </div>
@@ -200,31 +206,31 @@
     <!-- Experience Section -->
     <section id="experience" class="section section-alt">
         <div class="container">
-            <h2 class="section-title">Work Experience</h2>
+            <h2 class="section-title" data-i18n="experience.title">Work Experience</h2>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <h3>Product Operations Intern</h3>
-                        <p class="timeline-org">iQIYI (Beijing) · 2024.05 – 2024.08</p>
+                        <h3 data-i18n="experience.job1.title">Product Operations Intern</h3>
+                        <p class="timeline-org" data-i18n="experience.job1.org">iQIYI (Beijing) · 2024.05 – 2024.08</p>
                         <ul class="timeline-highlights">
-                            <li>Assisted in building and maintaining internal platforms: AI editing platform, internal requirement management platform, and short-video promotion monitoring platform</li>
-                            <li>Collected and prioritized cross-department requirements; performed data analysis and statistics to support platform optimization decisions</li>
-                            <li>Conducted data screening and analysis using SQL, Excel, and internal tools</li>
-                            <li>Managed external platform data integration (e.g., Xiaohongshu): evaluated third-party API data, account metrics, and crawler-based data acquisition for optimal strategies</li>
+                            <li data-i18n="experience.job1.d1">Assisted in building and maintaining internal platforms: AI editing platform, internal requirement management platform, and short-video promotion monitoring platform</li>
+                            <li data-i18n="experience.job1.d2">Collected and prioritized cross-department requirements; performed data analysis and statistics to support platform optimization decisions</li>
+                            <li data-i18n="experience.job1.d3">Conducted data screening and analysis using SQL, Excel, and internal tools</li>
+                            <li data-i18n="experience.job1.d4">Managed external platform data integration (e.g., Xiaohongshu): evaluated third-party API data, account metrics, and crawler-based data acquisition for optimal strategies</li>
                         </ul>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <h3>Engineer Assistant</h3>
-                        <p class="timeline-org">Haite Photoelectric Co., Ltd. · 2023.01 – 2023.03 & 2023.07 – 2023.09</p>
+                        <h3 data-i18n="experience.job2.title">Engineer Assistant</h3>
+                        <p class="timeline-org" data-i18n="experience.job2.org">Haite Photoelectric Co., Ltd. · 2023.01 – 2023.03 &amp; 2023.07 – 2023.09</p>
                         <ul class="timeline-highlights">
-                            <li>Learned semiconductor laser chip fabrication processes: photolithography, cleaving, and coating</li>
-                            <li>Participated in semiconductor laser Bar cavity facet mirror inspection</li>
-                            <li>Co-invented 2 utility model patents: "Cavity Facet Inspection Fixing Device for Semiconductor Laser Bar" and "Cavity Facet Inspection Clamp for Semiconductor Laser Bar Strip"</li>
-                            <li>Patents granted by China National Intellectual Property Administration (Nov 2023)</li>
+                            <li data-i18n="experience.job2.d1">Learned semiconductor laser chip fabrication processes: photolithography, cleaving, and coating</li>
+                            <li data-i18n="experience.job2.d2">Participated in semiconductor laser Bar cavity facet mirror inspection</li>
+                            <li data-i18n="experience.job2.d3">Co-invented 2 utility model patents: "Cavity Facet Inspection Fixing Device for Semiconductor Laser Bar" and "Cavity Facet Inspection Clamp for Semiconductor Laser Bar Strip"</li>
+                            <li data-i18n="experience.job2.d4">Patents granted by China National Intellectual Property Administration (Nov 2023)</li>
                         </ul>
                     </div>
                 </div>
@@ -235,24 +241,24 @@
     <!-- Education Section -->
     <section id="education" class="section">
         <div class="container">
-            <h2 class="section-title">Education</h2>
+            <h2 class="section-title" data-i18n="education.title">Education</h2>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <h3>MSc Computer Science and Technology</h3>
+                        <h3 data-i18n="education.msc.title">MSc Computer Science and Technology</h3>
                         <p class="timeline-org">University of Glasgow</p>
                         <p class="timeline-date">2024.09 – 2025.12</p>
-                        <p class="timeline-desc">Core Courses: Python, Java, Data Science, Machine Learning, Deep Learning, Big Data, Network Science, Text Data Processing, Mobile HCI</p>
+                        <p class="timeline-desc" data-i18n="education.msc.courses">Core Courses: Python, Java, Data Science, Machine Learning, Deep Learning, Big Data, Network Science, Text Data Processing, Mobile HCI</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <h3>B.Eng. Space Information and Digital Technology</h3>
-                        <p class="timeline-org">Jilin University · College of Communication Engineering</p>
+                        <h3 data-i18n="education.be.title">B.Eng. Space Information and Digital Technology</h3>
+                        <p class="timeline-org" data-i18n="education.be.org">Jilin University · College of Communication Engineering</p>
                         <p class="timeline-date">2020.09 – 2024.06</p>
-                        <p class="timeline-desc">Core Courses: Communication Principles, Digital Circuits, Electromagnetic Fields & Waves, Algorithms & Data Structures, Stochastic Signal Analysis, Digital Communication Principles, MCU & Embedded Systems, Python Programming, Databases</p>
+                        <p class="timeline-desc" data-i18n="education.be.courses">Core Courses: Communication Principles, Digital Circuits, Electromagnetic Fields &amp; Waves, Algorithms &amp; Data Structures, Stochastic Signal Analysis, Digital Communication Principles, MCU &amp; Embedded Systems, Python Programming, Databases</p>
                     </div>
                 </div>
             </div>
@@ -262,12 +268,12 @@
     <!-- Contact Section -->
     <section id="contact" class="section section-alt">
         <div class="container">
-            <h2 class="section-title">Get in Touch</h2>
-            <p class="contact-desc">I'm always open to discussing new opportunities, research collaborations, or chatting about AI and machine learning.</p>
+            <h2 class="section-title" data-i18n="contact.title">Get in Touch</h2>
+            <p class="contact-desc" data-i18n="contact.desc">I'm always open to discussing new opportunities, research collaborations, or chatting about AI and machine learning.</p>
             <div class="contact-grid">
                 <a href="mailto:1009811214@qq.com" class="contact-card">
                     <i class="fas fa-envelope"></i>
-                    <h3>Email</h3>
+                    <h3 data-i18n="contact.email">Email</h3>
                     <p>1009811214@qq.com</p>
                 </a>
                 <a href="https://github.com/cuihua739-lang" target="_blank" class="contact-card">
@@ -277,7 +283,7 @@
                 </a>
                 <a href="#" class="contact-card">
                     <i class="fas fa-phone"></i>
-                    <h3>Phone</h3>
+                    <h3 data-i18n="contact.phone">Phone</h3>
                     <p>13001069776</p>
                 </a>
             </div>
@@ -287,7 +293,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Hanyi Zhang. Built with clean HTML & CSS.</p>
+            <p data-i18n="footer">&copy; 2026 Hanyi Zhang. Built with clean HTML &amp; CSS.</p>
         </div>
     </footer>
 
