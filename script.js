@@ -17,7 +17,7 @@ const i18n = {
             title: "About Me",
             p1: "I'm a machine learning engineer with expertise in deep learning, natural language processing, and full-stack web development. Currently completing my MSc in Computer Science at the University of Glasgow, with a bachelor's in Space Information & Digital Technology from Jilin University.",
             p2: "My research on knowledge distillation for search reranking eliminates the high latency of chain-of-thought generation while maintaining near-baseline accuracy. I've also built RAG systems that reduced LLM hallucination rates from 36% to below 6% in e-commerce scenarios.",
-            statResearch: "Research Projects",
+            statProjects: "Projects",
             statIntern: "Internships",
             statPatent: "Patents"
         },
@@ -109,7 +109,7 @@ const i18n = {
             title: "关于我",
             p1: "我是一名机器学习工程师，深耕深度学习、自然语言处理和全栈 Web 开发。目前在格拉斯哥大学攻读计算机科学硕士学位，本科毕业于吉林大学空间信息与数字技术专业。",
             p2: "在搜索重排序的知识蒸馏研究中，我提出了一种无链式推理的蒸馏策略，消除了思维链生成的高延迟，同时保持了接近基线的准确率。我还构建了 RAG 系统，在电商场景中将大模型幻觉率从 36% 降至 6% 以下。",
-            statResearch: "研究项目",
+            statProjects: "项目",
             statIntern: "实习经历",
             statPatent: "专利"
         },
